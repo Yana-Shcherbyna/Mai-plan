@@ -156,30 +156,7 @@ section{
     font-style: italic;
     font-weight: 500;
 }
-/* footer************************************* */
-footer{
-    height: 108px;
-    background: #FAFAFA;
-    border-top: 2px solid #BDBDBD;
-    display: flex;
-    align-items: center;
-}
-.copyright{
-    justify-content: flex-start;
-    color: #4F4F4F;
-    font-size: 16px;
-}
 
-.copyright__link{
-    justify-content: flex-end;
-}
-.copyright__link>a{
-    color: var(--Blue-1);
-    height: 17px;
-    font-size: 12px;
-    letter-spacing: 0.6px;
-    border-bottom: 1px dotted var(--Blue-1);
-}
 /* article****************************** */
 article{
     background: #FFF;;
@@ -231,6 +208,9 @@ article .guide__items{
 .autor__info{
     margin: 48px 0 64px 0;
 }
+.autor__info .col{
+    align-items: flex-start;
+}
 .autor__infoName{
     margin-left: 12px;
     font-size: 18px;
@@ -254,7 +234,9 @@ article .guide__items{
     background: #F2F2F2;
 }
 .likes__blockLeft{
-     color: var(--Blue-1);
+    color: var(--Blue-1);
+    display: flex;
+    align-items: center;
 }
 .likes__counter{
     margin: 8px;
@@ -273,6 +255,8 @@ article .guide__items{
 }
 .likes__blockRight{
     color: var(--Gray-1);
+    display: flex;
+    align-items: center;
 }
 .likes__block img{
     cursor: pointer;
@@ -300,4 +284,34 @@ article .guide__items{
     text-transform: uppercase;
     font-weight: 500;
     margin-right: 4px;
+}
+
+/* footer************************************* */
+footer{
+    height: 108px;
+    background: #FAFAFA;
+    border-top: 2px solid #BDBDBD;
+    display: flex;
+    align-items: center;
+}
+.copyright{
+    color: #4F4F4F;
+    font-size: 16px;
+}
+
+/* style for footer link **************** */
+/* .copyright__link{
+    justify-content: flex-end;
+}
+.copyright__link>a{
+    color: var(--Blue-1);
+    height: 17px;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    border-bottom: 1px dotted var(--Blue-1);
+} */
+
+
+.hide{
+    display: none;
 }
